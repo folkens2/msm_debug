@@ -20,7 +20,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    render("show")
+    render("show_details.html.erb")
   end
 
   def edit_form
@@ -37,7 +37,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    render("show")
+    render("show_details.html.erb")
   end
 
   def destroy
