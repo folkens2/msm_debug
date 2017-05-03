@@ -38,7 +38,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    redirect_to("directors/show_details.html.erb")
+    render("directors/show_details.html.erb")
   end
 
   def destroy
