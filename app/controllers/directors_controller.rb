@@ -25,6 +25,7 @@ class DirectorsController < ApplicationController
 
   def edit_form
     @director = Director.find(params[:id])
+    render("directors/edit_form.html.erb")
   end
 
   def update_row
@@ -37,7 +38,7 @@ class DirectorsController < ApplicationController
 
     @director.save
 
-    render("show_details.html.erb")
+    render("directors/show_details.html.erb")
   end
 
   def destroy
